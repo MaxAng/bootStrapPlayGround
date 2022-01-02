@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div id="textContainer"></div>
+
+    <script>
+      const sweetArray = [
+        "hidden",
+        "menu",
+        "snap",
+        "wordpress",
+        "growth",
+        "easy",
+        "clock",
+        "computer",
+        "line",
+        "tick",
+        "chevron",
+        "search",
+      ];
+
+      let coll = "";
+      for (let i = 0; i < sweetArray.length; i++) {
+        coll += `${sweetArray[i]} 
+        <span class="icon-container">
+            <svg style="background:yellow" class="icon icon--primary">
+                <use xlink:href="../images/sprite.svg#${sweetArray[i]}"></use>
+            </svg>
+        </span> 
+        <br>`;
+      }
+
+      document.getElementById("textContainer").innerHTML = coll;
+    </script>
+  </body>
+</html>
