@@ -4,7 +4,7 @@ body {
 
 /* NavBar */
 .bg-custom {
-  background: rgba(176, 179, 194, 1);
+  background: rgb(176, 179, 194);
 }
 
 .navbar-textColor .navbar-nav .nav-link {
@@ -48,15 +48,53 @@ body {
   }
 }
 
-/* Carousel */
-/* .carousel .carousel-item {
-  height: 500px;
+/* Overlap Container */
+.overlap {
+  margin: auto;
+}
+.overlap {
+  margin: auto;
 }
 
-.carousel-item img {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  min-height: 500px;
-} */
+.card-title {
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  padding: 1.5rem 3.5rem;
+}
+
+.list-myContainer {
+  flex-direction: column;
+}
+
+.list-group-item {
+  border: none;
+  background: rgb(234, 244, 253);
+}
+
+svg {
+  margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .overlap {
+    position: absolute;
+    display: block;
+    bottom: -20px;
+    right: 20px;
+    z-index: 100;
+  }
+
+  .card-body {
+    padding: 3rem 6.5rem;
+  }
+
+  .row {
+    padding-left: 1rem;
+  }
+
+  .list-myContainer {
+    flex-direction: column;
+  }
+}
