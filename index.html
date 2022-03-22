@@ -28,12 +28,12 @@
     >
       <a class="navbar-brand" href="#">
         <img
-          src="./images/PE Logo transparent bg.gif"
+          src="./images/Hovenient Logo Only Color.svg"
           alt=""
-          width="80"
-          height="80"
+          width="70"
+          height="70"
         />
-        Polychem Enterprise
+        HOVENIENT PLT
       </a>
 
       <button
@@ -62,6 +62,7 @@
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
+              href="product.html"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
@@ -71,12 +72,11 @@
               Product
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="product.html">Action</a>
-              <a class="dropdown-item" href="product.html">Another action</a>
-              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="product.html"
-                >Something else here</a
+                >Industrial Chemicals</a
               >
+              <a class="dropdown-item" href="product.html">Blend Chemicals</a>
+              <a class="dropdown-item" href="product.html">Packaging</a>
             </div>
           </li>
           <li class="nav-item">
@@ -187,16 +187,20 @@
         $(this).parent("li").addClass("active");
       });
     </script>
-    <!-- <script>
-      $(function () {
-        $("#navDiv .navbar-nav a").click(function (e) {
-          e.preventDefault(); //To prevent the default anchor tag behaviour
-          var url = this.href;
-          console.log(this.href);
-          // $(".main").load(url);
+
+    <!-- Allowed auto dropdown for NavBar with CSS -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown").hover(function () {
+          var dropdownMenu = $(this).children(".dropdown-menu");
+          if (dropdownMenu.is(":visible")) {
+            dropdownMenu.parent().toggleClass("open");
+          }
         });
       });
-    </script> -->
+    </script>
+
+    <!-- Refresh only div -->
     <script>
       $(function () {
         $("#navDiv .navbar-nav a").on("click", function (e) {
@@ -207,11 +211,5 @@
         });
       });
     </script>
-
-    <!-- <script>
-      $(document).ready(function () {
-
-      });
-    </script> -->
   </body>
 </html>

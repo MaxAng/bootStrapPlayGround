@@ -2,6 +2,16 @@ body {
   height: 200vh;
 }
 
+h1,
+h2 {
+  margin: 1rem 0rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
 /* NavBar */
 .bg-custom {
   background: rgb(176, 179, 194);
@@ -46,6 +56,19 @@ body {
     padding-right: 2rem;
     padding-left: 2rem;
   }
+}
+
+/* Google Map in contactUs.html*/
+.map-margin {
+  margin: 1rem 0rem;
+}
+
+/* Allowed auto dropdown for NavBar with jQuery */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0;
 }
 
 /* Overlap Container */
