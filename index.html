@@ -26,7 +26,7 @@
       id="navDiv"
       class="navbar navbar-expand-lg navbar-light bg-custom sticky-top"
     >
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img
           src="./images/Hovenient Logo Only Color.svg"
           alt=""
@@ -51,7 +51,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-5">
           <li class="nav-item active">
-            <a class="nav-link" href="home.html">
+            <a class="nav-link" href="index.html">
               Home
               <span class="sr-only">(current)</span>
             </a>
@@ -62,11 +62,11 @@
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
-              href="product.html"
               id="navbarDropdown"
+              href="#"
               role="button"
               data-toggle="dropdown"
-              aria-haspopup="true"
+              data-auto-close="true"
               aria-expanded="false"
             >
               Product
@@ -117,17 +117,14 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="./images/start-3984835_1920.jpg"
+            src="./images/Banner - Ethanol & Alcohol 2000x1000.jpg"
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item">
-          <img src="./images/Trust-Me.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
           <img
-            src="./images/typing-skills.jpg"
+            src="./images/Banner - Surfactant 2000x1000.jpg"
             class="d-block w-100"
             alt="..."
           />
@@ -153,10 +150,6 @@
       </button>
     </div>
 
-    <div class="main">
-      <p>initial text</p>
-    </div>
-
     <!-- Script -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -164,12 +157,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- This script is needed to run the "load" function. -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -180,36 +167,5 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <!-- Dynamic Active Class for NavBar -->
-    <script>
-      $("#navDiv .navbar-nav a").on("click", function () {
-        $("#navDiv .navbar-nav").find("li.active").removeClass("active");
-        $(this).parent("li").addClass("active");
-      });
-    </script>
-
-    <!-- Allowed auto dropdown for NavBar with CSS -->
-    <script>
-      $(document).ready(function () {
-        $(".dropdown").hover(function () {
-          var dropdownMenu = $(this).children(".dropdown-menu");
-          if (dropdownMenu.is(":visible")) {
-            dropdownMenu.parent().toggleClass("open");
-          }
-        });
-      });
-    </script>
-
-    <!-- Refresh only div -->
-    <script>
-      $(function () {
-        $("#navDiv .navbar-nav a").on("click", function (e) {
-          e.preventDefault(); //To prevent the default anchor tag behaviour
-          var url = this.href;
-          console.log(url);
-          $(".main").load(url);
-        });
-      });
-    </script>
   </body>
 </html>
