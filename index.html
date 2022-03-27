@@ -30,8 +30,8 @@
         <img
           src="./images/Hovenient Logo Only Color.svg"
           alt=""
-          width="70"
-          height="70"
+          width="5rem"
+          height="5rem"
         />
         HOVENIENT PLT
       </a>
@@ -72,11 +72,37 @@
               Product
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="product.html"
-                >Industrial Chemicals</a
+              <a
+                style="font-size: small"
+                class="dropdown-item disabled"
+                href="product.html"
+                >Chemical Series</a
               >
+
+              <a class="dropdown-item" href="product.html">Raw Chemicals</a>
               <a class="dropdown-item" href="product.html">Blend Chemicals</a>
-              <a class="dropdown-item" href="product.html">Packaging</a>
+
+              <div class="dropdown-divider"></div>
+              <a
+                style="font-size: small"
+                class="dropdown-item disabled"
+                href="product.html"
+                >Food Series</a
+              >
+
+              <a class="dropdown-item" href="product.html">Food Ingredients</a>
+
+              <div class="dropdown-divider"></div>
+              <a
+                style="font-size: small"
+                class="dropdown-item disabled"
+                href="product.html"
+                >Others</a
+              >
+
+              <a class="dropdown-item" href="product.html"
+                >Bottles & Packaging</a
+              >
             </div>
           </li>
           <li class="nav-item">
@@ -86,10 +112,23 @@
       </div>
     </nav>
 
-    <!-- Carouset -->
+    <!-- Carousel -->
+    <!-- <div class="row">
+      <div style="background-color: red;" class="col">
+        1 of 3
+      </div>
+      <div style="background-color: greenyellow;" class="col-auto">
+        Variable width content
+      </div>
+      <div style="background-color: aqua;" class="col col-lg-2">
+        3 of 3
+      </div>
+    </div>
+  </div> -->
+
     <div
       id="carouselExampleIndicators"
-      class="carousel slide carousel-fade"
+      class="carousel slide carousel-fade custom-carousel-container"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
@@ -167,5 +206,15 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // $(window).resize(function () {
+      //   // if this.width() <
+
+      //   $("#custom-carousel-container").removeClass(
+      //     "justify-content-md-center"
+      //   );
+      // });
+    </script>
   </body>
 </html>

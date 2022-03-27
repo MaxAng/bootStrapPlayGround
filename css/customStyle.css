@@ -58,6 +58,19 @@ p {
   }
 }
 
+/* Carousel */
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .custom-carousel-container {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+}
+
 /* Google Map in contactUs.html*/
 .map-margin {
   margin: 1rem 0rem;
@@ -113,10 +126,6 @@ svg {
 
   .card-body {
     padding: 3rem 6.5rem;
-  }
-
-  .row {
-    padding-left: 1rem;
   }
 
   .list-myContainer {
